@@ -1,2 +1,2 @@
 # synthea
-Analysis of Synthea SyntheticMass (open-source synthetic patient population)
+Analysis of [Synthea SyntheticMass](https://synthea.mitre.org/downloads) (open-source synthetic patient population)
