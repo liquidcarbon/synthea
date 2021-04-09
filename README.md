@@ -1,6 +1,8 @@
 # SyntheticMass
 Analysis of [Synthea SyntheticMass](https://synthea.mitre.org/downloads) (open-source synthetic patient population)
 
+* `extract.sh`: data prep script
+
 ## Predicting Hypertension
 
 The goal of this exercise is to predict the probability that a patient has hypertension (diagnosis code 38341003) on a given date.
