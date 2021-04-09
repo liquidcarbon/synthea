@@ -1,16 +1,7 @@
 ### This script extracts relevant files from Synthea archives ###
-# Logs the output:
-# 210408@15:41:13 INFO [extract.sh] scanning archive output_1_20170524T232103.tar.gz
-# 210408@15:41:45 INFO [extract.sh] found 4 matching files
-# 210408@15:41:45 INFO [extract.sh] extracting file output_1/csv/conditions.csv
-# 210408@15:42:11 INFO [extract.sh] extracting file output_1/csv/medications.csv
-# 210408@15:42:37 INFO [extract.sh] extracting file output_1/csv/patients.csv
-# 210408@15:43:03 INFO [extract.sh] extracting file output_1/csv/procedures.csv
-# 210408@15:43:29 INFO [extract.sh] repairing patients.csv file
-# 210408@15:43:29 INFO [extract.sh] finished extracting files
-# 210408@15:43:30 INFO [extract.sh] packaging relevant files
-# 210408@15:43:39 INFO [extract.sh] files ready for analysis
 
+# Download https://storage.googleapis.com/synthea-public/historical/synthea_1m_fhir_3_0_May_24.tar.gz
+# Untar it and grab first file: output_1_20170524T232103.tar.gz
 
 #!/bin/bash
 
@@ -53,3 +44,15 @@ do
 done
 
 echo $(date $DATE_FMT) INFO [${0##*/}] files ready for analysis
+
+# Output:
+# 210408@15:41:13 INFO [extract.sh] scanning archive output_1_20170524T232103.tar.gz
+# 210408@15:41:45 INFO [extract.sh] found 4 matching files
+# 210408@15:41:45 INFO [extract.sh] extracting file output_1/csv/conditions.csv
+# 210408@15:42:11 INFO [extract.sh] extracting file output_1/csv/medications.csv
+# 210408@15:42:37 INFO [extract.sh] extracting file output_1/csv/patients.csv
+# 210408@15:43:03 INFO [extract.sh] extracting file output_1/csv/procedures.csv
+# 210408@15:43:29 INFO [extract.sh] repairing patients.csv file
+# 210408@15:43:29 INFO [extract.sh] finished extracting files
+# 210408@15:43:30 INFO [extract.sh] packaging relevant files
+# 210408@15:43:39 INFO [extract.sh] files ready for analysis
